@@ -1,0 +1,45 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "VFAdobeAnalytics-debug.module": ["<VFAdobeAnalytics-debug.module>"]
+  "main": ["<VFAdobeAnalytics-debug.module>"]
+  "test": ["<VFAdobeAnalytics-debug.module>"]
+default: "main"
+nodes:
+  "/Users/khaledsaad/Downloads/mobile-services/.build/artifacts/mobile-services/AdobeMobile.xcframework/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/khaledsaad/Downloads/mobile-services/Sources/VFAdobeAnalytics/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "<VFAdobeAnalytics-debug.module>":
+    tool: phony
+    inputs: ["/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.build/VFAdobeAnalytics.swift.o","/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.swiftmodule"]
+    outputs: ["<VFAdobeAnalytics-debug.module>"]
+
+  "C.VFAdobeAnalytics-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/khaledsaad/Downloads/mobile-services/Sources/VFAdobeAnalytics/VFAdobeAnalytics.swift"]
+    outputs: ["/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.build/VFAdobeAnalytics.swift.o","/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.swiftmodule"]
+    executable: "/Users/khaledsaad/My Files/Mac Applications/Xcode/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "VFAdobeAnalytics"
+    module-output-path: "/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.swiftmodule"
+    import-paths: ["/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.build"
+    objects: ["/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.build/VFAdobeAnalytics.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.13","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.build/VFAdobeAnalytics-Swift.h","-color-diagnostics","-sdk","/Users/khaledsaad/My Files/Mac Applications/Xcode/Xcode 2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk","-F","/Users/khaledsaad/My Files/Mac Applications/Xcode/Xcode 2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Users/khaledsaad/My Files/Mac Applications/Xcode/Xcode 2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/khaledsaad/My Files/Mac Applications/Xcode/Xcode 2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/khaledsaad/Downloads/mobile-services/Sources/VFAdobeAnalytics/VFAdobeAnalytics.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 12
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/khaledsaad/Downloads/mobile-services/.build/artifacts/mobile-services/AdobeMobile.xcframework/","/Users/khaledsaad/Downloads/mobile-services/Sources/VFAdobeAnalytics/","/Users/khaledsaad/Downloads/mobile-services/Package.swift","/Users/khaledsaad/Downloads/mobile-services/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

@@ -13,6 +13,10 @@ let package = Package(
         )
     ],
     targets: [
+        .target(name: "VFAdobeAnalytics",
+                dependencies: [
+                    "AdobeMobile" 
+                ]),
         .binaryTarget(
             name: "AdobeMobile",
             url: "https://github.com/khaledsaad93/mobile-services/raw/master/Sources/AdobeMobile.xcframework.zip",

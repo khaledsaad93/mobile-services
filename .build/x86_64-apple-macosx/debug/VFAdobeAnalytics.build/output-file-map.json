@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.build/master.swiftdeps"
+  },
+  "/Users/khaledsaad/Downloads/mobile-services/Sources/VFAdobeAnalytics/VFAdobeAnalytics.swift": {
+    "dependencies": "/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.build/VFAdobeAnalytics.d",
+    "object": "/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.build/VFAdobeAnalytics.swift.o",
+    "swiftmodule": "/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.build/VFAdobeAnalytics~partial.swiftmodule",
+    "swift-dependencies": "/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.build/VFAdobeAnalytics.swiftdeps"
+  }
+}

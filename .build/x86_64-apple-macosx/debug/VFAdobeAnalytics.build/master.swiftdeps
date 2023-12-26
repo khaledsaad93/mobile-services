@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "3a66c4876aeafff0f623bcd9ccda97e4dff2d580fea66a9664672e30ac7fbeb7"
+build_start_time: [1703602108, 58014869]
+build_end_time: [1703602108, 547122955]
+inputs:
+  "/Users/khaledsaad/Downloads/mobile-services/Sources/VFAdobeAnalytics/VFAdobeAnalytics.swift": [1703602006, 910182476]

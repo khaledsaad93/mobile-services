@@ -1,0 +1,4 @@
+module VFAdobeAnalytics {
+    header "/Users/khaledsaad/Downloads/mobile-services/.build/x86_64-apple-macosx/debug/VFAdobeAnalytics.build/VFAdobeAnalytics-Swift.h"
+    requires objc
+}
