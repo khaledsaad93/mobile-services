@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "mobile-services",
+    name: "VFAdobeAnalytics",
     platforms: [.iOS(.v12)],
     products: [
         .library(
-            name: "AdobeMobileSDK",
+            name: "VFAdobeAnalytics",
             targets: ["AdobeMobile",
                       "VFAdobeAnalytics"]
         )
