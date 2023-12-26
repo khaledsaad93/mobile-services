@@ -1,0 +1,25 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "packageRef" : {
+          "identity" : "mobile-services",
+          "kind" : "root",
+          "location" : "/Users/khaledsaad/Downloads/mobile-services",
+          "name" : "mobile-services"
+        },
+        "path" : "/Users/khaledsaad/Downloads/mobile-services/.build/artifacts/mobile-services/AdobeMobile.xcframework",
+        "source" : {
+          "checksum" : "e79ab758f9d9a225e81e1619de53cf944a89ca1c3cadbb45f660ec138694d093",
+          "type" : "remote",
+          "url" : "https://github.com/khaledsaad93/mobile-services/raw/master/Sources/AdobeMobile.xcframework.zip"
+        },
+        "targetName" : "AdobeMobile"
+      }
+    ],
+    "dependencies" : [
+
+    ]
+  },
+  "version" : 5
+}

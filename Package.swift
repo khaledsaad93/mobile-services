@@ -9,13 +9,14 @@ let package = Package(
     products: [
         .library(
             name: "AdobeMobileSDK",
-            targets: ["AdobeMobileSDK"]
+            targets: ["AdobeMobile"]
         )
     ],
     targets: [
         .binaryTarget(
-            name: "AdobeMobileSDK",
-            url: "https://github.com/dhamodharan-b/mobile-services/blob/master/Sources/AdobeMobile.xcframework.zip",
-            checksum: "e79ab758f9d9a225e81e1619de53cf944a89ca1c3cadbb45f660ec138694d093")
+            name: "AdobeMobile",
+            url: "https://github.com/khaledsaad93/mobile-services/raw/master/Sources/AdobeMobile.xcframework.zip",
+            checksum: "e79ab758f9d9a225e81e1619de53cf944a89ca1c3cadbb45f660ec138694d093"
+        )
     ]
 )
