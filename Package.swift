@@ -9,7 +9,8 @@ let package = Package(
     products: [
         .library(
             name: "AdobeMobileSDK",
-            targets: ["AdobeMobile"]
+            targets: ["AdobeMobile",
+                      "VFAdobeAnalytics"]
         )
     ],
     targets: [
